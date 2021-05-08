@@ -1,0 +1,14 @@
+D:\C#\Seminarska\MemoryGame\MainGame\bin\Debug\MainGame.exe.config
+D:\C#\Seminarska\MemoryGame\MainGame\bin\Debug\MainGame.exe
+D:\C#\Seminarska\MemoryGame\MainGame\bin\Debug\MainGame.pdb
+D:\C#\Seminarska\MemoryGame\MainGame\obj\Debug\MainGame.csprojAssemblyReference.cache
+D:\C#\Seminarska\MemoryGame\MainGame\obj\Debug\MainGame.MainGame.resources
+D:\C#\Seminarska\MemoryGame\MainGame\obj\Debug\MainGame.Properties.Resources.resources
+D:\C#\Seminarska\MemoryGame\MainGame\obj\Debug\MainGame.csproj.GenerateResource.cache
+D:\C#\Seminarska\MemoryGame\MainGame\obj\Debug\MainGame.csproj.CoreCompileInputs.cache
+D:\C#\Seminarska\MemoryGame\MainGame\obj\Debug\MainGame.exe
+D:\C#\Seminarska\MemoryGame\MainGame\obj\Debug\MainGame.pdb
+D:\C#\Seminarska\MemoryGame\MainGame\obj\Debug\MainGame.QuitForm.resources
+D:\C#\Seminarska\MemoryGame\MainGame\bin\Debug\Users_and_Security.dll
+D:\C#\Seminarska\MemoryGame\MainGame\bin\Debug\Users_and_Security.pdb
+D:\C#\Seminarska\MemoryGame\MainGame\obj\Debug\MainGame.csproj.CopyComplete

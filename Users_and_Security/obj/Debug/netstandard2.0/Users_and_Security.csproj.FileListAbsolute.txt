@@ -1,0 +1,9 @@
+D:\C#\Seminarska\MemoryGame\Users_and_Security\bin\Debug\netstandard2.0\Users_and_Security.deps.json
+D:\C#\Seminarska\MemoryGame\Users_and_Security\bin\Debug\netstandard2.0\Users_and_Security.dll
+D:\C#\Seminarska\MemoryGame\Users_and_Security\bin\Debug\netstandard2.0\Users_and_Security.pdb
+D:\C#\Seminarska\MemoryGame\Users_and_Security\obj\Debug\netstandard2.0\Users_and_Security.csprojAssemblyReference.cache
+D:\C#\Seminarska\MemoryGame\Users_and_Security\obj\Debug\netstandard2.0\Users_and_Security.AssemblyInfoInputs.cache
+D:\C#\Seminarska\MemoryGame\Users_and_Security\obj\Debug\netstandard2.0\Users_and_Security.AssemblyInfo.cs
+D:\C#\Seminarska\MemoryGame\Users_and_Security\obj\Debug\netstandard2.0\Users_and_Security.csproj.CoreCompileInputs.cache
+D:\C#\Seminarska\MemoryGame\Users_and_Security\obj\Debug\netstandard2.0\Users_and_Security.dll
+D:\C#\Seminarska\MemoryGame\Users_and_Security\obj\Debug\netstandard2.0\Users_and_Security.pdb

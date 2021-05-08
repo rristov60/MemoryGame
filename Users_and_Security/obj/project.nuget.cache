@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "OJWA3A1jb+ccG3jy5VwEsjp7Q54yCPjR6yL7ZAYrNn7X+QQRSmSCSAnYkMFKNxHGNkgggfRog7qDEB4ABr2i2Q==",
+  "success": true,
+  "projectFilePath": "D:\\C#\\Seminarska\\MemoryGame\\Users_and_Security\\Users_and_Security.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
