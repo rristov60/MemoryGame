@@ -8,6 +8,7 @@ namespace Users_and_Security
         private static string name;
         private static string lastName;
         private static int bestScore;
+        public static bool newHighScore;
 
         public User(string _username, string _name, string _lastName, int _bestScore) 
         {

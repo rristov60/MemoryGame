@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LogInScreen;
 
 namespace MainGame
 {
@@ -19,7 +20,11 @@ namespace MainGame
 
         private void btnYes_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+
+            //Application.Exit();
+            //this.Hide();
+            ThanksForPlaying P = new ThanksForPlaying();
+            P.Show();
         }
 
         private void btnNo_Click(object sender, EventArgs e)

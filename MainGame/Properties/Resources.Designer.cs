@@ -333,6 +333,16 @@ namespace MainGame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Thanks_for_playing {
+            get {
+                object obj = ResourceManager.GetObject("Thanks_for_playing", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap worldClock {
             get {
                 object obj = ResourceManager.GetObject("worldClock", resourceCulture);

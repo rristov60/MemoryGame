@@ -118,88 +118,91 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Shape16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Shape16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ClosedCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ClosedCard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Shape5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Shape5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DotTicker" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DotTicker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ClockBase" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ClockBase.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Shape13" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Shape13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Shape2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Shape2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Shape4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Shape4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Shape8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Shape8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="worldClock" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\worldClock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Shape18" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Shape18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Shape12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Shape12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Shape10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Shape10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Shape1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Shape1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Shape11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Shape11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Shape9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Shape9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Shape7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Shape7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Shape17" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Shape17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Shape15" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Shape15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ClockBase" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ClockBase.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Shape6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Shape6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Shape14" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Shape14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Minimize" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Minimize.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="worldClock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\worldClock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MainTicker" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MainTicker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Shape5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shape5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Shape3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Shape3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Shape15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shape15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shape13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shape13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="back" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Shape2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shape2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shape16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shape16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DotTicker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DotTicker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shape8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shape8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Minimize" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Minimize.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shape4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shape4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shape11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shape11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shape3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shape3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ClosedCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ClosedCard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shape1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shape1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MainTicker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainTicker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shape7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shape7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shape10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shape10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shape17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shape17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="dot" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Shape6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shape6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shape18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shape18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="second" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\second.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shape12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shape12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thanks_for_playing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thanks_for_playing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

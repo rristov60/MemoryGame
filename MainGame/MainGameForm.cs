@@ -129,6 +129,7 @@ namespace MainGame
 
         private void btnStart_Click(object sender, EventArgs e)
         {
+            User.newHighScore = false;
             minutes = 2;
             seconds = 30;
             time.Text = "0" + Convert.ToString(minutes) + " : " + Convert.ToString(seconds);
@@ -422,12 +423,20 @@ namespace MainGame
                         if(bestBefore < User.getBestScore())
                         {
                             // Go ahead and show congrats, you have new personal best
-                        }else
+                            User.newHighScore = true;
+                        }
+                        else
                         {
                             // Show good job dialog ( make smth about the score e.g. add the time to the score )
                             // and return to the previous ( don't forget to use the blur function
                             // show in the dialog if there is new best score
                         }
+
+                        GoodJobForm goodJobForm = new GoodJobForm();
+                        BlurFunctions.blur(panel1, pb, bmp);
+                        goodJobForm.ShowDialog();
+                        BlurFunctions.removeBlur(pb);
+                        goodJobForm.Dispose();
                         btnStart.Enabled = true;
                     }
                 }
