@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignUpScreen", "SignUpScree
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainGame", "MainGame\MainGame.csproj", "{C63844E2-2F38-49AB-9436-3863097924AE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLLogic", "SQLLogic\SQLLogic.csproj", "{AA241287-38CB-4EB6-9E9C-88A7EE49937E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{C63844E2-2F38-49AB-9436-3863097924AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C63844E2-2F38-49AB-9436-3863097924AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C63844E2-2F38-49AB-9436-3863097924AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA241287-38CB-4EB6-9E9C-88A7EE49937E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA241287-38CB-4EB6-9E9C-88A7EE49937E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA241287-38CB-4EB6-9E9C-88A7EE49937E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA241287-38CB-4EB6-9E9C-88A7EE49937E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
