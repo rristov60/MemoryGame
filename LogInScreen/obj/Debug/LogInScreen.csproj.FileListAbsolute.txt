@@ -23,3 +23,6 @@ D:\C#\Seminarska\MemoryGame\LogInScreen\bin\Debug\SQLLogic.dll
 D:\C#\Seminarska\MemoryGame\LogInScreen\bin\Debug\System.Data.SqlClient.dll
 D:\C#\Seminarska\MemoryGame\LogInScreen\bin\Debug\SQLLogic.pdb
 D:\C#\Seminarska\MemoryGame\LogInScreen\bin\Debug\System.Data.SqlClient.xml
+D:\C#\Seminarska\MemoryGame\LogInScreen\bin\Debug\CustomWindowsForms.exe
+D:\C#\Seminarska\MemoryGame\LogInScreen\bin\Debug\CustomWindowsForms.pdb
+D:\C#\Seminarska\MemoryGame\LogInScreen\bin\Debug\CustomWindowsForms.exe.config

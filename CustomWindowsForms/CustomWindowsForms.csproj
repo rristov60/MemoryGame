@@ -122,5 +122,11 @@
   <ItemGroup>
     <None Include="Resources\userPass.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SQLLogic\SQLLogic.csproj">
+      <Project>{aa241287-38cb-4eb6-9e9c-88a7ee49937e}</Project>
+      <Name>SQLLogic</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -111,6 +111,10 @@
     <None Include="Resources\X2.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CustomWindowsForms\CustomWindowsForms.csproj">
+      <Project>{a1da6291-38c1-4e2c-99e0-1dc541487fe3}</Project>
+      <Name>CustomWindowsForms</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SQLLogic\SQLLogic.csproj">
       <Project>{aa241287-38cb-4eb6-9e9c-88a7ee49937e}</Project>
       <Name>SQLLogic</Name>

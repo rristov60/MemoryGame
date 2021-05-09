@@ -37,9 +37,9 @@ namespace CustomWindowsForms
             // pictureBox1
             // 
             this.pictureBox1.Image = global::CustomWindowsForms.Properties.Resources.TryAgain;
-            this.pictureBox1.Location = new System.Drawing.Point(29, 29);
+            this.pictureBox1.Location = new System.Drawing.Point(29, 32);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(443, 24);
+            this.pictureBox1.Size = new System.Drawing.Size(443, 21);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -56,6 +56,7 @@ namespace CustomWindowsForms
             this.btnOK.TabIndex = 8;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // TryAgain
             // 

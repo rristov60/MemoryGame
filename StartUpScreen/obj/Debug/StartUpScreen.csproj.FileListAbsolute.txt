@@ -26,3 +26,6 @@ D:\C#\Seminarska\MemoryGame\StartUpScreen\bin\Debug\Users_and_Security.pdb
 D:\C#\Seminarska\MemoryGame\StartUpScreen\bin\Debug\SQLLogic.pdb
 D:\C#\Seminarska\MemoryGame\StartUpScreen\bin\Debug\System.Data.SqlClient.xml
 D:\C#\Seminarska\MemoryGame\StartUpScreen\obj\Debug\StartUpScreen.csproj.CopyComplete
+D:\C#\Seminarska\MemoryGame\StartUpScreen\bin\Debug\CustomWindowsForms.exe
+D:\C#\Seminarska\MemoryGame\StartUpScreen\bin\Debug\CustomWindowsForms.pdb
+D:\C#\Seminarska\MemoryGame\StartUpScreen\bin\Debug\CustomWindowsForms.exe.config

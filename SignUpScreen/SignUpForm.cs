@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Users_and_Security;
 using SQLLogic;
+using CustomWindowsForms;
 
 namespace SignUpScreen
 {
@@ -26,7 +27,15 @@ namespace SignUpScreen
 
         private void btnSingUpVerify_Click(object sender, EventArgs e)
         {
-            bool success = Connection_and_Queries.signUpUser(txtUsernameSignUp.Text.Trim(), PasswordHashing.hashPassword(txtPasswrodSignUp.Text), txtFirstName.Text.Trim(), txtLastName.Text.Trim());
+            this.Hide();
+            //bool success = Connection_and_Queries.signUpUser(txtUsernameSignUp.Text.Trim(), PasswordHashing.hashPassword(txtPasswrodSignUp.Text), txtFirstName.Text.Trim(), txtLastName.Text.Trim());
+            //W.DialogResult = DialogResult.OK;
+            PleaseWait W = new PleaseWait(txtUsernameSignUp.Text.Trim(), PasswordHashing.hashPassword(txtPasswrodSignUp.Text), txtFirstName.Text.Trim(), txtLastName.Text.Trim());
+            W.ShowDialog();
+            //bool success = W.SignUP(txtUsernameSignUp.Text.Trim(), PasswordHashing.hashPassword(txtPasswrodSignUp.Text), txtFirstName.Text.Trim(), txtLastName.Text.Trim());
+            //W.Hide();
+            bool success = W.sigupOK;
+            W.Dispose();
             if (success)
             {
                 MessageBox.Show("Succesfull registration !"); 
@@ -34,7 +43,13 @@ namespace SignUpScreen
             }
             else
             {
-                MessageBox.Show("Something went wrong, please try again later !"); // Replace with custom one
+                //W.DialogResult = DialogResult.OK;
+                //MessageBox.Show("Something went wrong, please try again later !"); // Replace with custom one
+                TryAgain N = new TryAgain();
+                N.ShowDialog();
+                this.Show();
+                N.Dispose();
+                
             }
         }
 

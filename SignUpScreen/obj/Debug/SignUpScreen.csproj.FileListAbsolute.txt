@@ -17,3 +17,6 @@ D:\C#\Seminarska\MemoryGame\SignUpScreen\bin\Debug\System.Data.SqlClient.dll
 D:\C#\Seminarska\MemoryGame\SignUpScreen\bin\Debug\System.Data.SqlClient.xml
 D:\C#\Seminarska\MemoryGame\SignUpScreen\bin\Debug\SQLLogic.dll
 D:\C#\Seminarska\MemoryGame\SignUpScreen\bin\Debug\SQLLogic.pdb
+D:\C#\Seminarska\MemoryGame\SignUpScreen\bin\Debug\CustomWindowsForms.exe
+D:\C#\Seminarska\MemoryGame\SignUpScreen\bin\Debug\CustomWindowsForms.pdb
+D:\C#\Seminarska\MemoryGame\SignUpScreen\bin\Debug\CustomWindowsForms.exe.config

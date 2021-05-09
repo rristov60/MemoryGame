@@ -11,6 +11,7 @@ using SignUpScreen;
 using MainGame;
 using Users_and_Security;
 using SQLLogic;
+using CustomWindowsForms;
 
 namespace LogInScreen
 {
@@ -105,11 +106,17 @@ namespace LogInScreen
             {
                 if(!(User.connected))
                 {
-                    MessageBox.Show("Please connect to internet in order to play or play as guest !");
+                    //MessageBox.Show("Please connect to internet in order to play or play as guest !");
+                    NoInternet N = new NoInternet();
+                    N.ShowDialog();
+                    N.Dispose();
                 }
                 else
                 {
-                    MessageBox.Show("Username or password incorrect !");
+                    //MessageBox.Show("Username or password incorrect !");
+                    WrongUserOrPass N = new WrongUserOrPass();
+                    N.ShowDialog();
+                    N.Dispose();
                 }
             }
         }

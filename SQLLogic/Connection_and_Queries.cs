@@ -76,6 +76,13 @@ namespace SQLLogic
                     sda.Fill(dtbl);
                     if (dtbl.Rows.Count == 1)
                     {
+                        foreach(DataRow row in dtbl.Rows)
+                        {
+                            User.setUserName(row["Username"].ToString());
+                            User.setName(row["FirstName"].ToString());
+                            User.setLastName(row["SecondName"].ToString());
+                            User.setBestScore(int.Parse(row["PersonalBest"].ToString()));
+                        }
                         return true;
                     }
                     else

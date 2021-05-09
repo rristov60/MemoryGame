@@ -117,6 +117,10 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CustomWindowsForms\CustomWindowsForms.csproj">
+      <Project>{a1da6291-38c1-4e2c-99e0-1dc541487fe3}</Project>
+      <Name>CustomWindowsForms</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MainGame\MainGame.csproj">
       <Project>{c63844e2-2f38-49ab-9436-3863097924ae}</Project>
       <Name>MainGame</Name>

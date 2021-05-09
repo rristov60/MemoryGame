@@ -45,5 +45,21 @@ namespace Users_and_Security
         {
             return username;
         }
+
+        public static void setUserName(string _username)
+        {
+            username = _username;
+        }
+
+        public static void setName(string _name)
+        {
+            name = _name;
+        }
+
+        public static void setLastName(string _lastName)
+        {
+            lastName = _lastName;
+        }
+
     }
 }

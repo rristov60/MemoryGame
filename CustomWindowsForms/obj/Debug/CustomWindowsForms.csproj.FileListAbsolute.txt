@@ -11,3 +11,8 @@ D:\C#\Seminarska\MemoryGame\CustomWindowsForms\obj\Debug\CustomWindowsForms.pdb
 D:\C#\Seminarska\MemoryGame\CustomWindowsForms\obj\Debug\CustomWindowsForms.WrongUserOrPass.resources
 D:\C#\Seminarska\MemoryGame\CustomWindowsForms\obj\Debug\CustomWindowsForms.NoInternet.resources
 D:\C#\Seminarska\MemoryGame\CustomWindowsForms\obj\Debug\CustomWindowsForms.TryAgain.resources
+D:\C#\Seminarska\MemoryGame\CustomWindowsForms\bin\Debug\SQLLogic.dll
+D:\C#\Seminarska\MemoryGame\CustomWindowsForms\bin\Debug\Users_and_Security.dll
+D:\C#\Seminarska\MemoryGame\CustomWindowsForms\bin\Debug\SQLLogic.pdb
+D:\C#\Seminarska\MemoryGame\CustomWindowsForms\bin\Debug\Users_and_Security.pdb
+D:\C#\Seminarska\MemoryGame\CustomWindowsForms\obj\Debug\CustomWindowsForms.csproj.CopyComplete
