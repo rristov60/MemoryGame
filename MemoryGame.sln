@@ -11,7 +11,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignUpScreen", "SignUpScree
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainGame", "MainGame\MainGame.csproj", "{C63844E2-2F38-49AB-9436-3863097924AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLLogic", "SQLLogic\SQLLogic.csproj", "{AA241287-38CB-4EB6-9E9C-88A7EE49937E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SQLLogic", "SQLLogic\SQLLogic.csproj", "{AA241287-38CB-4EB6-9E9C-88A7EE49937E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomWindowsForms", "CustomWindowsForms\CustomWindowsForms.csproj", "{A1DA6291-38C1-4E2C-99E0-1DC541487FE3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{AA241287-38CB-4EB6-9E9C-88A7EE49937E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA241287-38CB-4EB6-9E9C-88A7EE49937E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA241287-38CB-4EB6-9E9C-88A7EE49937E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1DA6291-38C1-4E2C-99E0-1DC541487FE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1DA6291-38C1-4E2C-99E0-1DC541487FE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1DA6291-38C1-4E2C-99E0-1DC541487FE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1DA6291-38C1-4E2C-99E0-1DC541487FE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,11 @@
+D:\C#\Seminarska\MemoryGame\CustomWindowsForms\bin\Debug\CustomWindowsForms.exe.config
+D:\C#\Seminarska\MemoryGame\CustomWindowsForms\bin\Debug\CustomWindowsForms.exe
+D:\C#\Seminarska\MemoryGame\CustomWindowsForms\bin\Debug\CustomWindowsForms.pdb
+D:\C#\Seminarska\MemoryGame\CustomWindowsForms\obj\Debug\CustomWindowsForms.csprojAssemblyReference.cache
+D:\C#\Seminarska\MemoryGame\CustomWindowsForms\obj\Debug\CustomWindowsForms.PleaseWait.resources
+D:\C#\Seminarska\MemoryGame\CustomWindowsForms\obj\Debug\CustomWindowsForms.Properties.Resources.resources
+D:\C#\Seminarska\MemoryGame\CustomWindowsForms\obj\Debug\CustomWindowsForms.csproj.GenerateResource.cache
+D:\C#\Seminarska\MemoryGame\CustomWindowsForms\obj\Debug\CustomWindowsForms.csproj.CoreCompileInputs.cache
+D:\C#\Seminarska\MemoryGame\CustomWindowsForms\obj\Debug\CustomWindowsForms.exe
+D:\C#\Seminarska\MemoryGame\CustomWindowsForms\obj\Debug\CustomWindowsForms.pdb
+D:\C#\Seminarska\MemoryGame\CustomWindowsForms\obj\Debug\CustomWindowsForms.WrongUserOrPass.resources
