@@ -90,7 +90,6 @@ namespace MainGame
             this.Name = "GoodJobForm";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "GoodJobForm";
             this.ResumeLayout(false);
             this.PerformLayout();
 

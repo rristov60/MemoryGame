@@ -60,5 +60,10 @@ namespace CustomWindowsForms
                 DialogResult = DialogResult.OK;
             }
         }
+
+        private void PleaseWait_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

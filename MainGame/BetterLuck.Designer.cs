@@ -64,7 +64,6 @@ namespace MainGame
             this.Name = "BetterLuck";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "BetterLuck";
             this.ResumeLayout(false);
             this.PerformLayout();
 

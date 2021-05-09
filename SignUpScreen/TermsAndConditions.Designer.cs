@@ -94,7 +94,7 @@ namespace SignUpScreen
             this.Name = "TermsAndConditions";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TermsAndConditions";
+            this.Text = "Terms And Conditions";
             this.ResumeLayout(false);
             this.PerformLayout();
 

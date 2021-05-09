@@ -61,7 +61,7 @@ namespace CustomWindowsForms
             this.Name = "PleaseWait";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Load += new System.EventHandler(this.PleaseWait_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

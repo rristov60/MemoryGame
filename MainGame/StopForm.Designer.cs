@@ -102,7 +102,6 @@ namespace MainGame
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "StopForm";
-            this.Text = "StopForm";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -91,7 +91,6 @@ namespace MainGame
             this.Name = "QuitForm";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "QuitForm";
             this.ResumeLayout(false);
             this.PerformLayout();
 
