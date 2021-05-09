@@ -390,6 +390,20 @@
         "compile": {
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
+      },
+      "Users_and_Security/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "System.Data.Common": "4.3.0",
+          "System.Data.SqlClient": "4.8.2"
+        },
+        "compile": {
+          "bin/placeholder/Users_and_Security.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Users_and_Security.dll": {}
+        }
       }
     }
   },
@@ -1962,13 +1976,19 @@
         "system.threading.tasks.4.3.0.nupkg.sha512",
         "system.threading.tasks.nuspec"
       ]
+    },
+    "Users_and_Security/1.0.0": {
+      "type": "project",
+      "path": "../Users_and_Security/Users_and_Security.csproj",
+      "msbuildProject": "../Users_and_Security/Users_and_Security.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
       "System.Data.Common >= 4.3.0",
-      "System.Data.SqlClient >= 4.8.2"
+      "System.Data.SqlClient >= 4.8.2",
+      "Users_and_Security >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2002,7 +2022,11 @@
       "frameworks": {
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\C#\\Seminarska\\MemoryGame\\Users_and_Security\\Users_and_Security.csproj": {
+              "projectPath": "D:\\C#\\Seminarska\\MemoryGame\\Users_and_Security\\Users_and_Security.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,0 +1,12 @@
+D:\C#\Seminarska\MemoryGame\SQLLogic\bin\Debug\netstandard2.0\SQLLogic.deps.json
+D:\C#\Seminarska\MemoryGame\SQLLogic\bin\Debug\netstandard2.0\SQLLogic.dll
+D:\C#\Seminarska\MemoryGame\SQLLogic\bin\Debug\netstandard2.0\SQLLogic.pdb
+D:\C#\Seminarska\MemoryGame\SQLLogic\bin\Debug\netstandard2.0\Users_and_Security.dll
+D:\C#\Seminarska\MemoryGame\SQLLogic\bin\Debug\netstandard2.0\Users_and_Security.pdb
+D:\C#\Seminarska\MemoryGame\SQLLogic\obj\Debug\netstandard2.0\SQLLogic.csprojAssemblyReference.cache
+D:\C#\Seminarska\MemoryGame\SQLLogic\obj\Debug\netstandard2.0\SQLLogic.AssemblyInfoInputs.cache
+D:\C#\Seminarska\MemoryGame\SQLLogic\obj\Debug\netstandard2.0\SQLLogic.AssemblyInfo.cs
+D:\C#\Seminarska\MemoryGame\SQLLogic\obj\Debug\netstandard2.0\SQLLogic.csproj.CoreCompileInputs.cache
+D:\C#\Seminarska\MemoryGame\SQLLogic\obj\Debug\netstandard2.0\SQLLogic.csproj.CopyComplete
+D:\C#\Seminarska\MemoryGame\SQLLogic\obj\Debug\netstandard2.0\SQLLogic.dll
+D:\C#\Seminarska\MemoryGame\SQLLogic\obj\Debug\netstandard2.0\SQLLogic.pdb

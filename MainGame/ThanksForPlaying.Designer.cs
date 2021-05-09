@@ -59,6 +59,7 @@ namespace LogInScreen
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ThanksForPlaying";
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ThanksForPlaying";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -14,3 +14,5 @@ D:\C#\Seminarska\MemoryGame\MainGame\bin\Debug\Users_and_Security.pdb
 D:\C#\Seminarska\MemoryGame\MainGame\obj\Debug\MainGame.csproj.CopyComplete
 D:\C#\Seminarska\MemoryGame\MainGame\obj\Debug\MainGame.GoodJobForm.resources
 D:\C#\Seminarska\MemoryGame\MainGame\obj\Debug\LogInScreen.ThanksForPlaying.resources
+D:\C#\Seminarska\MemoryGame\MainGame\bin\Debug\System.Data.SqlClient.dll
+D:\C#\Seminarska\MemoryGame\MainGame\bin\Debug\System.Data.SqlClient.xml

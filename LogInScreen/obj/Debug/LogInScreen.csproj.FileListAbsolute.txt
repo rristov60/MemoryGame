@@ -19,3 +19,7 @@ D:\C#\Seminarska\MemoryGame\LogInScreen\bin\Debug\Users_and_Security.pdb
 D:\C#\Seminarska\MemoryGame\LogInScreen\bin\Debug\MainGame.exe
 D:\C#\Seminarska\MemoryGame\LogInScreen\bin\Debug\MainGame.pdb
 D:\C#\Seminarska\MemoryGame\LogInScreen\bin\Debug\MainGame.exe.config
+D:\C#\Seminarska\MemoryGame\LogInScreen\bin\Debug\SQLLogic.dll
+D:\C#\Seminarska\MemoryGame\LogInScreen\bin\Debug\System.Data.SqlClient.dll
+D:\C#\Seminarska\MemoryGame\LogInScreen\bin\Debug\SQLLogic.pdb
+D:\C#\Seminarska\MemoryGame\LogInScreen\bin\Debug\System.Data.SqlClient.xml

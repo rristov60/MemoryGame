@@ -154,6 +154,7 @@ namespace LogInScreen
             this.btnLogIn.TabIndex = 5;
             this.btnLogIn.Text = "LOG IN";
             this.btnLogIn.UseVisualStyleBackColor = true;
+            this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
             // 
             // btnSignUp
             // 

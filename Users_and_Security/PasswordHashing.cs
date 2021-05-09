@@ -5,7 +5,7 @@ using System.Security.Cryptography; // Namespace used for accesing the hashing f
 
 namespace Users_and_Security
 {
-    class PasswordHashing
+    public class PasswordHashing
     {
         public static string hashPassword(string password)
         {

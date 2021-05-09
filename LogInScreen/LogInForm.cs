@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using SignUpScreen;
 using MainGame;
 using Users_and_Security;
+using SQLLogic;
 
 namespace LogInScreen
 {
@@ -88,6 +89,29 @@ namespace LogInScreen
             MainGame.MainGame game = new MainGame.MainGame();
             game.Show();
             this.Hide();
+        }
+
+        private void btnLogIn_Click(object sender, EventArgs e)
+        {
+            bool success = Connection_and_Queries.logIn(txtUser.Text.Trim(), PasswordHashing.hashPassword(txtPassword.Text));
+
+            if (success)
+            {
+                MainGame.MainGame game = new MainGame.MainGame();
+                game.Show();
+                this.Hide();
+            }
+            else
+            {
+                if(!(User.connected))
+                {
+                    MessageBox.Show("Please connect to internet in order to play or play as guest !");
+                }
+                else
+                {
+                    MessageBox.Show("Username or password incorrect !");
+                }
+            }
         }
     }
 }

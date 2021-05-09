@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Users_and_Security;
+using SQLLogic;
 
 namespace SignUpScreen
 {
@@ -25,7 +26,16 @@ namespace SignUpScreen
 
         private void btnSingUpVerify_Click(object sender, EventArgs e)
         {
-
+            bool success = Connection_and_Queries.signUpUser(txtUsernameSignUp.Text.Trim(), PasswordHashing.hashPassword(txtPasswrodSignUp.Text), txtFirstName.Text.Trim(), txtLastName.Text.Trim());
+            if (success)
+            {
+                MessageBox.Show("Succesfull registration !"); 
+                this.DialogResult = DialogResult.OK;
+            }
+            else
+            {
+                MessageBox.Show("Something went wrong, please try again later !"); // Replace with custom one
+            }
         }
 
         private void txtFirstName_Enter(object sender, EventArgs e)

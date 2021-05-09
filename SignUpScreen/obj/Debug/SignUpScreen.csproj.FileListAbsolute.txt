@@ -13,3 +13,7 @@ D:\C#\Seminarska\MemoryGame\SignUpScreen\obj\Debug\SignUpScreen.exe
 D:\C#\Seminarska\MemoryGame\SignUpScreen\obj\Debug\SignUpScreen.pdb
 D:\C#\Seminarska\MemoryGame\SignUpScreen\bin\Debug\Users_and_Security.dll
 D:\C#\Seminarska\MemoryGame\SignUpScreen\bin\Debug\Users_and_Security.pdb
+D:\C#\Seminarska\MemoryGame\SignUpScreen\bin\Debug\System.Data.SqlClient.dll
+D:\C#\Seminarska\MemoryGame\SignUpScreen\bin\Debug\System.Data.SqlClient.xml
+D:\C#\Seminarska\MemoryGame\SignUpScreen\bin\Debug\SQLLogic.dll
+D:\C#\Seminarska\MemoryGame\SignUpScreen\bin\Debug\SQLLogic.pdb
