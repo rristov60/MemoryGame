@@ -30,6 +30,7 @@ namespace MainGame
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainGame));
             this.pnlCards = new System.Windows.Forms.Panel();
             this.card36 = new System.Windows.Forms.PictureBox();
             this.card35 = new System.Windows.Forms.PictureBox();
@@ -764,6 +765,7 @@ namespace MainGame
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.DimGray;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainGame";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Memory Game";

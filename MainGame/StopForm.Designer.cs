@@ -29,6 +29,7 @@ namespace MainGame
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StopForm));
             this.btnNO = new System.Windows.Forms.Button();
             this.lblStopForm = new System.Windows.Forms.Label();
             this.btnYES = new System.Windows.Forms.Button();
@@ -54,8 +55,8 @@ namespace MainGame
             // 
             this.lblStopForm.AutoSize = true;
             this.lblStopForm.Font = new System.Drawing.Font("Futura Bk BT", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStopForm.ForeColor = System.Drawing.Color.DimGray;
-            this.lblStopForm.Location = new System.Drawing.Point(95, 25);
+            this.lblStopForm.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblStopForm.Location = new System.Drawing.Point(90, 28);
             this.lblStopForm.Name = "lblStopForm";
             this.lblStopForm.Size = new System.Drawing.Size(377, 25);
             this.lblStopForm.TabIndex = 43;
@@ -79,11 +80,11 @@ namespace MainGame
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Futura Bk BT", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Futura Bk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(84, 59);
+            this.label1.Location = new System.Drawing.Point(128, 66);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(397, 25);
+            this.label1.Size = new System.Drawing.Size(303, 19);
             this.label1.TabIndex = 45;
             this.label1.Text = "ALL OF YOUR PROGRESS WILL BE LOST !";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -99,6 +100,7 @@ namespace MainGame
             this.Controls.Add(this.lblStopForm);
             this.Controls.Add(this.btnYES);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "StopForm";
             this.Text = "StopForm";
             this.ResumeLayout(false);

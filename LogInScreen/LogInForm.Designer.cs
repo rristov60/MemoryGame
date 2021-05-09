@@ -62,11 +62,11 @@ namespace LogInScreen
             // pictureLogo
             // 
             this.pictureLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureLogo.Image = ((System.Drawing.Image)(resources.GetObject("pictureLogo.Image")));
-            this.pictureLogo.Location = new System.Drawing.Point(3, 3);
+            this.pictureLogo.Image = global::LogInScreen.Properties.Resources.Logo;
+            this.pictureLogo.Location = new System.Drawing.Point(5, 22);
             this.pictureLogo.Name = "pictureLogo";
-            this.pictureLogo.Size = new System.Drawing.Size(163, 180);
-            this.pictureLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureLogo.Size = new System.Drawing.Size(157, 150);
+            this.pictureLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureLogo.TabIndex = 0;
             this.pictureLogo.TabStop = false;
             this.pictureLogo.Click += new System.EventHandler(this.pictureBox1_Click);

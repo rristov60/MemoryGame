@@ -29,6 +29,7 @@ namespace MainGame
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GoodJobForm));
             this.btnQuit = new System.Windows.Forms.Button();
             this.lblFinishedGame = new System.Windows.Forms.Label();
             this.btnPlayAgain = new System.Windows.Forms.Button();
@@ -85,6 +86,7 @@ namespace MainGame
             this.Controls.Add(this.lblFinishedGame);
             this.Controls.Add(this.btnQuit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "GoodJobForm";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -24,6 +24,7 @@ namespace SignUpScreen
             userValidPicBox.Visible = false;
             txtConfirmPassword.Enabled = false;
             btnSingUpVerify.Enabled = false;
+            checkBox1.Enabled = false;
         }
 
         private void btnSingUpVerify_Click(object sender, EventArgs e)
@@ -162,6 +163,8 @@ namespace SignUpScreen
                 {
                     passValidPicBox.Image = Properties.Resources.X2;
                     passValidPicBox.Tag = 1;
+                    checkBox1.Enabled = false;
+                    checkBox1.Checked = false;
                 }
             }
 
@@ -198,6 +201,8 @@ namespace SignUpScreen
                 {
                     repeatPassPicBox.Image = Properties.Resources.X2;
                     repeatPassPicBox.Tag = 1;
+                    checkBox1.Enabled = false;
+                    checkBox1.Checked = false;
                 }
             }
         }
@@ -221,6 +226,8 @@ namespace SignUpScreen
             {
                 passValidPicBox.Image = Properties.Resources.X2;
                 passValidPicBox.Tag = 1;
+                checkBox1.Enabled = false;
+                checkBox1.Checked = false;
             }
         }
 
@@ -231,11 +238,14 @@ namespace SignUpScreen
             {
                 repeatPassPicBox.Image = Properties.Resources.OK2;
                 repeatPassPicBox.Tag = 0;
+                checkBox1.Enabled = true;
             }
             else
             {
                 repeatPassPicBox.Image = Properties.Resources.X2;
                 repeatPassPicBox.Tag = 1;
+                checkBox1.Enabled = false;
+                checkBox1.Checked = false;
             }
         }
 
@@ -275,6 +285,12 @@ namespace SignUpScreen
                 btnSingUpVerify.Enabled = false;
             }
 
+        }
+
+        private void linkLblTerms_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            TermsAndConditions T = new TermsAndConditions();
+            T.ShowDialog();
         }
     }
 }

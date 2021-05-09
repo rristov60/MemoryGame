@@ -38,9 +38,9 @@ namespace CustomWindowsForms
             // pictureBox1
             // 
             this.pictureBox1.Image = global::CustomWindowsForms.Properties.Resources.PleaseWait;
-            this.pictureBox1.Location = new System.Drawing.Point(69, 41);
+            this.pictureBox1.Location = new System.Drawing.Point(77, 44);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(312, 26);
+            this.pictureBox1.Size = new System.Drawing.Size(282, 23);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;

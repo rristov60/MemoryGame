@@ -29,6 +29,7 @@ namespace SignUpScreen
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignUpForm));
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lineShape5 = new Microsoft.VisualBasic.PowerPacks.LineShape();
@@ -56,6 +57,7 @@ namespace SignUpScreen
             this.btnGoBack = new System.Windows.Forms.Button();
             this.passValidPicBox = new System.Windows.Forms.PictureBox();
             this.repeatPassPicBox = new System.Windows.Forms.PictureBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.userValidPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.passValidPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repeatPassPicBox)).BeginInit();
@@ -111,6 +113,7 @@ namespace SignUpScreen
             this.lineShape2.BorderColor = System.Drawing.Color.DimGray;
             this.lineShape2.Enabled = false;
             this.lineShape2.Name = "lineShape2";
+            this.lineShape2.Tag = "1";
             this.lineShape2.X1 = 214;
             this.lineShape2.X2 = 353;
             this.lineShape2.Y1 = 85;
@@ -155,6 +158,7 @@ namespace SignUpScreen
             this.linkLblTerms.TabIndex = 7;
             this.linkLblTerms.TabStop = true;
             this.linkLblTerms.Text = "TERMS AND CONDITIONS";
+            this.linkLblTerms.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLblTerms_LinkClicked);
             // 
             // lblSignUp
             // 
@@ -177,6 +181,7 @@ namespace SignUpScreen
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(140, 18);
             this.txtFirstName.TabIndex = 10;
+            this.txtFirstName.Tag = "1";
             this.txtFirstName.Text = "First Name";
             this.txtFirstName.Enter += new System.EventHandler(this.txtFirstName_Enter);
             this.txtFirstName.Leave += new System.EventHandler(this.txtFirstName_Leave);
@@ -191,6 +196,7 @@ namespace SignUpScreen
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(140, 18);
             this.txtLastName.TabIndex = 11;
+            this.txtLastName.Tag = "1";
             this.txtLastName.Text = "Last Name";
             this.txtLastName.Enter += new System.EventHandler(this.txtLastName_Enter);
             this.txtLastName.Leave += new System.EventHandler(this.txtLastName_Leave);
@@ -205,7 +211,9 @@ namespace SignUpScreen
             this.txtUsernameSignUp.Name = "txtUsernameSignUp";
             this.txtUsernameSignUp.Size = new System.Drawing.Size(312, 18);
             this.txtUsernameSignUp.TabIndex = 12;
+            this.txtUsernameSignUp.Tag = "1";
             this.txtUsernameSignUp.Text = "Username";
+            this.toolTip1.SetToolTip(this.txtUsernameSignUp, "Username Availability");
             this.txtUsernameSignUp.Enter += new System.EventHandler(this.txtUsernameSignUp_Enter);
             this.txtUsernameSignUp.Leave += new System.EventHandler(this.txtUsernameSignUp_Leave);
             // 
@@ -219,7 +227,9 @@ namespace SignUpScreen
             this.txtPasswrodSignUp.Name = "txtPasswrodSignUp";
             this.txtPasswrodSignUp.Size = new System.Drawing.Size(312, 18);
             this.txtPasswrodSignUp.TabIndex = 13;
+            this.txtPasswrodSignUp.Tag = "1";
             this.txtPasswrodSignUp.Text = "Password";
+            this.toolTip1.SetToolTip(this.txtPasswrodSignUp, resources.GetString("txtPasswrodSignUp.ToolTip"));
             this.txtPasswrodSignUp.TextChanged += new System.EventHandler(this.txtPasswrodSignUp_TextChanged);
             this.txtPasswrodSignUp.Enter += new System.EventHandler(this.txtPasswrodSignUp_Enter);
             this.txtPasswrodSignUp.Leave += new System.EventHandler(this.txtPasswrodSignUp_Leave);
@@ -234,6 +244,7 @@ namespace SignUpScreen
             this.txtConfirmPassword.Name = "txtConfirmPassword";
             this.txtConfirmPassword.Size = new System.Drawing.Size(312, 18);
             this.txtConfirmPassword.TabIndex = 14;
+            this.txtConfirmPassword.Tag = "1";
             this.txtConfirmPassword.Text = "Confirm Password";
             this.txtConfirmPassword.TextChanged += new System.EventHandler(this.txtConfirmPassword_TextChanged);
             this.txtConfirmPassword.Enter += new System.EventHandler(this.txtConfirmPassword_Enter);
@@ -349,6 +360,8 @@ namespace SignUpScreen
             this.userValidPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.userValidPicBox.TabIndex = 23;
             this.userValidPicBox.TabStop = false;
+            this.userValidPicBox.Tag = "1";
+            this.toolTip1.SetToolTip(this.userValidPicBox, "Username Availability");
             // 
             // btnGoBack
             // 
@@ -377,6 +390,8 @@ namespace SignUpScreen
             this.passValidPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.passValidPicBox.TabIndex = 24;
             this.passValidPicBox.TabStop = false;
+            this.passValidPicBox.Tag = "1";
+            this.toolTip1.SetToolTip(this.passValidPicBox, resources.GetString("passValidPicBox.ToolTip"));
             // 
             // repeatPassPicBox
             // 
@@ -387,6 +402,7 @@ namespace SignUpScreen
             this.repeatPassPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.repeatPassPicBox.TabIndex = 25;
             this.repeatPassPicBox.TabStop = false;
+            this.repeatPassPicBox.Tag = "1";
             // 
             // SignUpForm
             // 
@@ -458,6 +474,7 @@ namespace SignUpScreen
         private System.Windows.Forms.PictureBox userValidPicBox;
         private System.Windows.Forms.PictureBox passValidPicBox;
         private System.Windows.Forms.PictureBox repeatPassPicBox;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 

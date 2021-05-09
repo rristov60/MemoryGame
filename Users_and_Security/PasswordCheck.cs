@@ -12,7 +12,7 @@ namespace Users_and_Security
             string specialCh = @"%!@#$%^&*()?/>.<,:;'\|}]{[_~`+=-" + "\"";
             char [] specialChArray = specialCh.ToCharArray();
 
-            if ((password.Length < 8) || (!password.Any(char.IsUpper)) || (!password.Any(char.IsLower)))
+            if ((password.Length < 8) || (!password.Any(char.IsUpper)) || (!password.Any(char.IsLower)) || (!password.Any(char.IsDigit)))
             {
                 return false;
             }

@@ -20,3 +20,4 @@ D:\C#\Seminarska\MemoryGame\SignUpScreen\bin\Debug\SQLLogic.pdb
 D:\C#\Seminarska\MemoryGame\SignUpScreen\bin\Debug\CustomWindowsForms.exe
 D:\C#\Seminarska\MemoryGame\SignUpScreen\bin\Debug\CustomWindowsForms.pdb
 D:\C#\Seminarska\MemoryGame\SignUpScreen\bin\Debug\CustomWindowsForms.exe.config
+D:\C#\Seminarska\MemoryGame\SignUpScreen\obj\Debug\SignUpScreen.TermsAndConditions.resources
