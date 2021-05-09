@@ -19,3 +19,4 @@ D:\C#\Seminarska\MemoryGame\MainGame\bin\Debug\System.Data.SqlClient.xml
 D:\C#\Seminarska\MemoryGame\MainGame\bin\Debug\SQLLogic.dll
 D:\C#\Seminarska\MemoryGame\MainGame\bin\Debug\SQLLogic.pdb
 D:\C#\Seminarska\MemoryGame\MainGame\obj\Debug\MainGame.StopForm.resources
+D:\C#\Seminarska\MemoryGame\MainGame\obj\Debug\MainGame.BetterLuck.resources

@@ -29,7 +29,6 @@ namespace MainGame
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainGame));
             this.pnlCards = new System.Windows.Forms.Panel();
             this.card36 = new System.Windows.Forms.PictureBox();
@@ -82,9 +81,9 @@ namespace MainGame
             this.btnStop = new System.Windows.Forms.Button();
             this.btnMinimise = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.PictureBox();
-            this.timer = new System.Windows.Forms.Timer(this.components);
-            this.timerWrong = new System.Windows.Forms.Timer(this.components);
-            this.timerShowCards = new System.Windows.Forms.Timer(this.components);
+            this.timer = new System.Windows.Forms.Timer();
+            this.timerWrong = new System.Windows.Forms.Timer();
+            this.timerShowCards = new System.Windows.Forms.Timer();
             this.pnlCards.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.card36)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.card35)).BeginInit();
@@ -768,7 +767,7 @@ namespace MainGame
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainGame";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Memory Game";
+            this.Text = "Mind Twister";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.MainGame_Paint);
             this.pnlCards.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.card36)).EndInit();

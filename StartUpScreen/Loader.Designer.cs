@@ -29,11 +29,12 @@ namespace StartUpScreen
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Loader));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblWelcome = new System.Windows.Forms.Label();
             this.credits = new System.Windows.Forms.Label();
-            this.timerLoadingScreen = new System.Windows.Forms.Timer();
+            this.timerLoadingScreen = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,7 +70,7 @@ namespace StartUpScreen
             // 
             // timerLoadingScreen
             // 
-            this.timerLoadingScreen.Interval = 10000;
+            this.timerLoadingScreen.Interval = 20000;
             this.timerLoadingScreen.Tick += new System.EventHandler(this.timerLoadingScreen_Tick);
             // 
             // Loader
@@ -87,7 +88,7 @@ namespace StartUpScreen
             this.Name = "Loader";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Mind Twister";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

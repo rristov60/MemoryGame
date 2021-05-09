@@ -104,6 +104,14 @@ namespace MainGame
             {
                 timer.Stop();
                 timerFinished = true;
+                if(matchCounter != 18)
+                {
+                    BlurFunctions.blur(panel1, pb, bmp);
+                    BetterLuck B = new BetterLuck();
+                    B.ShowDialog();
+                    BlurFunctions.removeBlur(pb);
+                    B.Dispose();
+                }
                 btnStart.Enabled = true;
 
             }else if (seconds == 0)

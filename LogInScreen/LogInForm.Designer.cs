@@ -31,7 +31,6 @@ namespace LogInScreen
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogInForm));
             this.logoHolder = new System.Windows.Forms.Panel();
-            this.pictureLogo = new System.Windows.Forms.PictureBox();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
@@ -41,12 +40,13 @@ namespace LogInScreen
             this.btnLogIn = new System.Windows.Forms.Button();
             this.btnSignUp = new System.Windows.Forms.Button();
             this.linkLblGuest = new System.Windows.Forms.LinkLabel();
-            this.btnExit = new System.Windows.Forms.PictureBox();
             this.btnMinimise = new System.Windows.Forms.PictureBox();
+            this.btnExit = new System.Windows.Forms.PictureBox();
+            this.pictureLogo = new System.Windows.Forms.PictureBox();
             this.logoHolder.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimise)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // logoHolder
@@ -58,18 +58,6 @@ namespace LogInScreen
             this.logoHolder.Name = "logoHolder";
             this.logoHolder.Size = new System.Drawing.Size(163, 180);
             this.logoHolder.TabIndex = 0;
-            // 
-            // pictureLogo
-            // 
-            this.pictureLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureLogo.Image = global::LogInScreen.Properties.Resources.Logo;
-            this.pictureLogo.Location = new System.Drawing.Point(5, 22);
-            this.pictureLogo.Name = "pictureLogo";
-            this.pictureLogo.Size = new System.Drawing.Size(157, 150);
-            this.pictureLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureLogo.TabIndex = 0;
-            this.pictureLogo.TabStop = false;
-            this.pictureLogo.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // shapeContainer1
             // 
@@ -188,6 +176,18 @@ namespace LogInScreen
             this.linkLblGuest.Text = "PLAY AS GUEST";
             this.linkLblGuest.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLblGuest_LinkClicked);
             // 
+            // btnMinimise
+            // 
+            this.btnMinimise.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinimise.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimise.Image")));
+            this.btnMinimise.Location = new System.Drawing.Point(486, 4);
+            this.btnMinimise.Name = "btnMinimise";
+            this.btnMinimise.Size = new System.Drawing.Size(18, 15);
+            this.btnMinimise.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMinimise.TabIndex = 8;
+            this.btnMinimise.TabStop = false;
+            this.btnMinimise.Click += new System.EventHandler(this.btnMinimise_Click);
+            // 
             // btnExit
             // 
             this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -200,17 +200,17 @@ namespace LogInScreen
             this.btnExit.TabStop = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // btnMinimise
+            // pictureLogo
             // 
-            this.btnMinimise.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMinimise.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimise.Image")));
-            this.btnMinimise.Location = new System.Drawing.Point(486, 4);
-            this.btnMinimise.Name = "btnMinimise";
-            this.btnMinimise.Size = new System.Drawing.Size(18, 15);
-            this.btnMinimise.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMinimise.TabIndex = 8;
-            this.btnMinimise.TabStop = false;
-            this.btnMinimise.Click += new System.EventHandler(this.btnMinimise_Click);
+            this.pictureLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureLogo.Image = global::LogInScreen.Properties.Resources.PngMindTwister;
+            this.pictureLogo.Location = new System.Drawing.Point(9, 7);
+            this.pictureLogo.Name = "pictureLogo";
+            this.pictureLogo.Size = new System.Drawing.Size(157, 169);
+            this.pictureLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureLogo.TabIndex = 0;
+            this.pictureLogo.TabStop = false;
+            this.pictureLogo.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // LogInForm
             // 
@@ -235,9 +235,9 @@ namespace LogInScreen
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Log In";
             this.logoHolder.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimise)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
