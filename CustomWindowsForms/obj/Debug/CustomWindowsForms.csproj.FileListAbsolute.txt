@@ -9,3 +9,5 @@ D:\C#\Seminarska\MemoryGame\CustomWindowsForms\obj\Debug\CustomWindowsForms.cspr
 D:\C#\Seminarska\MemoryGame\CustomWindowsForms\obj\Debug\CustomWindowsForms.exe
 D:\C#\Seminarska\MemoryGame\CustomWindowsForms\obj\Debug\CustomWindowsForms.pdb
 D:\C#\Seminarska\MemoryGame\CustomWindowsForms\obj\Debug\CustomWindowsForms.WrongUserOrPass.resources
+D:\C#\Seminarska\MemoryGame\CustomWindowsForms\obj\Debug\CustomWindowsForms.NoInternet.resources
+D:\C#\Seminarska\MemoryGame\CustomWindowsForms\obj\Debug\CustomWindowsForms.TryAgain.resources
