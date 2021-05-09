@@ -23,6 +23,7 @@ namespace SignUpScreen
             repeatPassPicBox.Visible = false;
             userValidPicBox.Visible = false;
             txtConfirmPassword.Enabled = false;
+            btnSingUpVerify.Enabled = false;
         }
 
         private void btnSingUpVerify_Click(object sender, EventArgs e)
@@ -104,7 +105,24 @@ namespace SignUpScreen
             {
                 txtUsernameSignUp.Text = "Username";
                 txtUsernameSignUp.ForeColor = Color.DimGray;
+                userValidPicBox.Visible = false;
             }
+            else
+            {
+                if (Connection_and_Queries.UserExists(txtUsernameSignUp.Text.Trim()))
+                {
+                    userValidPicBox.Visible = true;
+                    userValidPicBox.Image = Properties.Resources.X2;
+                    userValidPicBox.Tag = 1;
+                }
+                else
+                {
+                    userValidPicBox.Visible = true;
+                    userValidPicBox.Image = Properties.Resources.OK2;
+                    userValidPicBox.Tag = 0;
+                }
+            }
+
         }
 
         private void txtPasswrodSignUp_Enter(object sender, EventArgs e)
@@ -138,10 +156,12 @@ namespace SignUpScreen
                 if (PasswordCheck.valid(password))
                 {
                     passValidPicBox.Image = Properties.Resources.OK2;
+                    passValidPicBox.Tag = 0;
                 }
                 else
                 {
                     passValidPicBox.Image = Properties.Resources.X2;
+                    passValidPicBox.Tag = 1;
                 }
             }
 
@@ -170,9 +190,15 @@ namespace SignUpScreen
             {
                 repeatPassPicBox.Visible = true;
                 if (txtConfirmPassword.Text == password)
+                {
                     repeatPassPicBox.Image = Properties.Resources.OK2;
+                    repeatPassPicBox.Tag = 0;
+                }
                 else
+                {
                     repeatPassPicBox.Image = Properties.Resources.X2;
+                    repeatPassPicBox.Tag = 1;
+                }
             }
         }
 
@@ -189,10 +215,12 @@ namespace SignUpScreen
             if (PasswordCheck.valid(password))
             {
                 passValidPicBox.Image = Properties.Resources.OK2;
+                passValidPicBox.Tag = 0;
             }
             else
             {
                 passValidPicBox.Image = Properties.Resources.X2;
+                passValidPicBox.Tag = 1;
             }
         }
 
@@ -200,9 +228,53 @@ namespace SignUpScreen
         {
             repeatPassPicBox.Visible = true;
             if (txtConfirmPassword.Text == password)
+            {
                 repeatPassPicBox.Image = Properties.Resources.OK2;
+                repeatPassPicBox.Tag = 0;
+            }
             else
+            {
                 repeatPassPicBox.Image = Properties.Resources.X2;
+                repeatPassPicBox.Tag = 1;
+            }
+        }
+
+        private void checkBox1_CheckStateChanged(object sender, EventArgs e)
+        {
+            //if (checkBox1.Checked == true)
+            //{
+            //    if((userValidPicBox.Image == Properties.Resources.OK2) && (passValidPicBox.Image == Properties.Resources.OK2) && (repeatPassPicBox.Image == Properties.Resources.OK2) && 
+            //        (txtFirstName.Text != "") && (txtFirstName.Text != "First Name") &&
+            //        (txtLastName.Text != "") && (txtLastName.Text != "Last Name") &&
+            //        (txtUsernameSignUp.Text != "") && (txtUsernameSignUp.Text != "Username") &&
+            //        (txtPasswrodSignUp.Text != "") && (txtPasswrodSignUp.Text != "Password") && 
+            //        (txtConfirmPassword.Text != "") && (txtConfirmPassword.Text != "Confirm Password"))
+            //    {
+            //        btnSingUpVerify.Enabled = true;
+            //    }
+            //}
+            //else
+            //{
+            //    btnSingUpVerify.Enabled = false;
+            //}
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if((int.Parse(userValidPicBox.Tag.ToString()) == 0) && (int.Parse(passValidPicBox.Tag.ToString()) == 0) && (int.Parse(repeatPassPicBox.Tag.ToString()) == 0) && 
+                (txtFirstName.Text != "") && (txtFirstName.Text != "First Name") &&
+                (txtLastName.Text != "") && (txtLastName.Text != "Last Name") &&
+                (txtUsernameSignUp.Text != "") && (txtUsernameSignUp.Text != "Username") &&
+                (txtPasswrodSignUp.Text != "") && (txtPasswrodSignUp.Text != "Password") && 
+                (txtConfirmPassword.Text != "") && (txtConfirmPassword.Text != "Confirm Password") && (checkBox1.Checked))
+            {
+                btnSingUpVerify.Enabled = true;
+            }
+            else
+            {
+                btnSingUpVerify.Enabled = false;
+            }
+
         }
     }
 }

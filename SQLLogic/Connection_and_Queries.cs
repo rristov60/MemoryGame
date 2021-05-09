@@ -30,7 +30,8 @@ namespace SQLLogic
                     try
                     {
                         conn.Open();
-                    }catch (Exception ex)
+                    }
+                    catch (Exception ex)
                     {
                         return false;
                     }
@@ -38,7 +39,7 @@ namespace SQLLogic
                     //cmd.ExecuteNonQuery()
                     int sucess = (int)cmd.ExecuteNonQuery();
 
-                    if(sucess != 0)
+                    if (sucess != 0)
                     {
                         return true;
                     }
@@ -65,7 +66,7 @@ namespace SQLLogic
                     {
                         conn.Open();
                     }
-                    catch(Exception ex)
+                    catch (Exception ex)
                     {
                         User.connected = false;
                         return false;
@@ -76,7 +77,7 @@ namespace SQLLogic
                     sda.Fill(dtbl);
                     if (dtbl.Rows.Count == 1)
                     {
-                        foreach(DataRow row in dtbl.Rows)
+                        foreach (DataRow row in dtbl.Rows)
                         {
                             User.setUserName(row["Username"].ToString());
                             User.setName(row["FirstName"].ToString());
@@ -107,12 +108,48 @@ namespace SQLLogic
                     try
                     {
                         conn.Open();
-                    }catch (Exception ex)
+                    }
+                    catch (Exception ex)
                     {
 
                     }
 
                     int i = (int)cmd.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public static bool UserExists(string username)
+        {
+            using (var conn = new SqlConnection(connectionString))
+            {
+                using (var cmd = conn.CreateCommand())
+                {
+                    cmd.CommandText = @"
+                        SELECT * FROM Users
+                        WHERE Username='" + username + "'";
+                    try
+                    {
+                        conn.Open();
+                    }
+                    catch (Exception ex)
+                    {
+                        User.connected = false;
+                        return false;
+                    }
+
+                    SqlDataAdapter sda = new SqlDataAdapter(cmd.CommandText, connectionString);
+                    DataTable dtbl = new DataTable();
+                    sda.Fill(dtbl);
+                    if (dtbl.Rows.Count == 1)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+
                 }
             }
         }
