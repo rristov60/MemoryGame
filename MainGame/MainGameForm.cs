@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Imaging;
 using Users_and_Security;
+using SQLLogic;
 
 namespace MainGame
 {
@@ -26,7 +27,7 @@ namespace MainGame
         private PictureBox openCard2; // Second opened card that is being compared to the first one
         private Random randLoc = new Random(); // Random number that helps in randomizing cards every time
         private List<Point> coordinates = new List<Point>();
-        private int score = 0;
+        public static int score = 0;
         private int matchCounter = 0; // Counts how many matches there are
         private int bestBefore = 0;
         public MainGame()
@@ -49,12 +50,12 @@ namespace MainGame
             lblWelcome.Text = "Welcome " + User.getName() + " !";
             bestBefore = User.getBestScore();
 
-            foreach(PictureBox picbox in pnlCards.Controls)
-            {
-                picbox.Enabled = false;
-                coordinates.Add(picbox.Location);
+            //foreach(PictureBox picbox in pnlCards.Controls)
+            //{
+            //    picbox.Enabled = false;
+            //    coordinates.Add(picbox.Location);
 
-            }
+            //}
 
             if(User.getName() == "Guest")
             {
@@ -129,6 +130,15 @@ namespace MainGame
 
         private void btnStart_Click(object sender, EventArgs e)
         {
+            //List<Point> coordinates = new List<Point>();
+            pnlCards.Enabled = false;
+            foreach (PictureBox picbox in pnlCards.Controls)
+            {
+                picbox.Enabled = false;
+                coordinates.Add(picbox.Location);
+
+            }
+
             User.newHighScore = false;
             minutes = 2;
             seconds = 30;
@@ -414,8 +424,9 @@ namespace MainGame
                     {
                         timer.Stop();
                         score += seconds * 10 + minutes * 100;
+                        lblScore.Text = User.getBestScore().ToString();
 
-                        if(User.getBestScore() < score)
+                        if (User.getBestScore() < score)
                         {
                             User.setBestScore(score);
                         }
@@ -424,20 +435,36 @@ namespace MainGame
                         {
                             // Go ahead and show congrats, you have new personal best
                             User.newHighScore = true;
+                       
+                            if(User.getUser() != "guest")
+                            {
+                                Connection_and_Queries.updateHighScore();
+                            }
+
+                            GoodJobForm goodJobForm = new GoodJobForm();
+                            BlurFunctions.blur(panel1, pb, bmp);
+                            goodJobForm.ShowDialog();
+                            BlurFunctions.removeBlur(pb);
+                            goodJobForm.Dispose();
+                            btnStart.Enabled = true;
+
                         }
                         else
                         {
                             // Show good job dialog ( make smth about the score e.g. add the time to the score )
                             // and return to the previous ( don't forget to use the blur function
                             // show in the dialog if there is new best score
+
+                            GoodJobForm goodJobForm = new GoodJobForm();
+                            BlurFunctions.blur(panel1, pb, bmp);
+                            goodJobForm.ShowDialog();
+                            BlurFunctions.removeBlur(pb);
+                            goodJobForm.Dispose();
+                            btnStart.Enabled = true;
+
                         }
 
-                        GoodJobForm goodJobForm = new GoodJobForm();
-                        BlurFunctions.blur(panel1, pb, bmp);
-                        goodJobForm.ShowDialog();
-                        BlurFunctions.removeBlur(pb);
-                        goodJobForm.Dispose();
-                        btnStart.Enabled = true;
+
                     }
                 }
                 else
@@ -460,8 +487,25 @@ namespace MainGame
 
         private void btnStop_Click(object sender, EventArgs e)
         {
-            score = 0;
+            //score = 0;
+            BlurFunctions.blur(panel1, pb, bmp);
             // Show the are you sure you want to stop, the previous progress will be lost
+            timer.Stop();
+            StopForm S = new StopForm();
+            S.ShowDialog();
+            BlurFunctions.removeBlur(pb);
+            if (S.stop == false)
+            {
+                timer.Start();
+                pnlCards.Enabled = true;
+            }
+            else
+            {
+                pnlCards.Enabled = false;
+                btnStart.Enabled = true;
+            }
+            
+            S.Dispose();    
         }
 
         private void ShowCards()
@@ -514,6 +558,7 @@ namespace MainGame
             {
                 picBox.Image = Properties.Resources.ClosedCard;
             }
+            pnlCards.Enabled = true;
             timer.Start();
         }
     }

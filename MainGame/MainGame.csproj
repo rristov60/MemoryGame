@@ -82,6 +82,12 @@
       <DependentUpon>QuitForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Screenshot.cs" />
+    <Compile Include="StopForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StopForm.Designer.cs">
+      <DependentUpon>StopForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThanksForPlaying.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,9 @@
     </Compile>
     <EmbeddedResource Include="QuitForm.resx">
       <DependentUpon>QuitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StopForm.resx">
+      <DependentUpon>StopForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThanksForPlaying.resx">
       <DependentUpon>ThanksForPlaying.cs</DependentUpon>
@@ -209,6 +218,10 @@
     <None Include="Resources\second.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SQLLogic\SQLLogic.csproj">
+      <Project>{aa241287-38cb-4eb6-9e9c-88a7ee49937e}</Project>
+      <Name>SQLLogic</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Users_and_Security\Users_and_Security.csproj">
       <Project>{1fb03857-dc55-4290-828a-bb67dee59825}</Project>
       <Name>Users_and_Security</Name>

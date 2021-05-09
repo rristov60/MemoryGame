@@ -32,7 +32,6 @@ namespace MainGame
             this.Hide();
             ThanksForPlaying P = new ThanksForPlaying();
             P.Show();
-            
         }
 
         private void btnPlayAgain_Click(object sender, EventArgs e)

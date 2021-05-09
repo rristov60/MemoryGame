@@ -40,7 +40,7 @@ namespace MainGame
             this.btnQuit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnQuit.Font = new System.Drawing.Font("Futura Bk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQuit.ForeColor = System.Drawing.Color.DimGray;
-            this.btnQuit.Location = new System.Drawing.Point(295, 106);
+            this.btnQuit.Location = new System.Drawing.Point(295, 95);
             this.btnQuit.Name = "btnQuit";
             this.btnQuit.Size = new System.Drawing.Size(154, 33);
             this.btnQuit.TabIndex = 39;
@@ -53,7 +53,7 @@ namespace MainGame
             this.lblFinishedGame.AutoSize = true;
             this.lblFinishedGame.Font = new System.Drawing.Font("Futura Bk BT", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFinishedGame.ForeColor = System.Drawing.Color.DimGray;
-            this.lblFinishedGame.Location = new System.Drawing.Point(53, 45);
+            this.lblFinishedGame.Location = new System.Drawing.Point(53, 34);
             this.lblFinishedGame.Name = "lblFinishedGame";
             this.lblFinishedGame.Size = new System.Drawing.Size(441, 29);
             this.lblFinishedGame.TabIndex = 40;
@@ -67,7 +67,7 @@ namespace MainGame
             this.btnPlayAgain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlayAgain.Font = new System.Drawing.Font("Futura Bk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPlayAgain.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.btnPlayAgain.Location = new System.Drawing.Point(105, 106);
+            this.btnPlayAgain.Location = new System.Drawing.Point(105, 95);
             this.btnPlayAgain.Name = "btnPlayAgain";
             this.btnPlayAgain.Size = new System.Drawing.Size(154, 33);
             this.btnPlayAgain.TabIndex = 41;
@@ -80,7 +80,7 @@ namespace MainGame
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.ClientSize = new System.Drawing.Size(559, 201);
+            this.ClientSize = new System.Drawing.Size(559, 171);
             this.Controls.Add(this.btnPlayAgain);
             this.Controls.Add(this.lblFinishedGame);
             this.Controls.Add(this.btnQuit);
