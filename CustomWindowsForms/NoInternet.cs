@@ -19,6 +19,7 @@ namespace CustomWindowsForms
 
         private void btnOK_Click(object sender, EventArgs e)
         {
+            // Затворање на овој прозорец. Ова е направено на овој начин поради тоа што секогаш е повикуван како дијалог прозорец
             this.DialogResult = DialogResult.OK;
         }
     }

@@ -17,23 +17,27 @@ namespace MainGame
         public GoodJobForm()
         {
             InitializeComponent();
+            // Проверуваме дали играчот има нов Personal Best
             if (User.newHighScore)
             {
+                // Дколку има
                 lblFinishedGame.Text = "CONGRATS !! THAT IS NEW PERSONAL BEST";
             }else
             {
+                // Доколку нема
                 lblFinishedGame.Text = "NICE JOB, YOUR FINAL RESULT IS: " + User.getBestScore().ToString();
             }
         }
 
+        // Корисникот може да изелзе од играта доколку сака после ова
         private void btnQuit_Click(object sender, EventArgs e)
         {
-            // show thank you for playing and then Application.Exit()
             this.Hide();
-            ThanksForPlaying P = new ThanksForPlaying();
+            ThanksForPlaying P = new ThanksForPlaying(); // Gateway прозорец за излез од играта
             P.Show();
         }
 
+        // Доколку сака играчот повторно да игра
         private void btnPlayAgain_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.OK;

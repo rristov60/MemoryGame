@@ -21,14 +21,13 @@ namespace MainGame
             this.StartPosition = FormStartPosition.CenterScreen;
         }
 
+        // Доколку корисникот сака да ја стопира играта
         private void btnYES_Click(object sender, EventArgs e)
         {
             MainGame.score = 0;
             this.DialogResult = DialogResult.OK;
-            //ThanksForPlaying P = new ThanksForPlaying();
-            //P.Show();
         }
-
+        // Доколку не сака да ја стопира само си продолжува
         private void btnNO_Click(object sender, EventArgs e)
         {
             stop = false;

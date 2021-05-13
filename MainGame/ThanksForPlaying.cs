@@ -12,6 +12,7 @@ namespace LogInScreen
 {
     public partial class ThanksForPlaying : Form
     {
+        // Форма која се покажува како последна (благодарност за играње) и излева од апликацијата
         public ThanksForPlaying()
         {
             InitializeComponent();

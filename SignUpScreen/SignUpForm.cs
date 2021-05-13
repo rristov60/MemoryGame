@@ -19,6 +19,7 @@ namespace SignUpScreen
         public SignUpForm()
         {
             InitializeComponent();
+            // Сетирање на својства на одредени контроли
             passValidPicBox.Visible = false;
             repeatPassPicBox.Visible = false;
             userValidPicBox.Visible = false;
@@ -27,26 +28,24 @@ namespace SignUpScreen
             checkBox1.Enabled = false;
         }
 
+        // Кога корисникот креира свој акаунт
         private void btnSingUpVerify_Click(object sender, EventArgs e)
         {
             this.Hide();
-            //bool success = Connection_and_Queries.signUpUser(txtUsernameSignUp.Text.Trim(), PasswordHashing.hashPassword(txtPasswrodSignUp.Text), txtFirstName.Text.Trim(), txtLastName.Text.Trim());
-            //W.DialogResult = DialogResult.OK;
+            // Се креира Please Wait инстанца која праќа Query на Azure за да се креира акаунт
             PleaseWait W = new PleaseWait(txtUsernameSignUp.Text.Trim(), PasswordHashing.hashPassword(txtPasswrodSignUp.Text), txtFirstName.Text.Trim(), txtLastName.Text.Trim());
             W.ShowDialog();
-            //bool success = W.SignUP(txtUsernameSignUp.Text.Trim(), PasswordHashing.hashPassword(txtPasswrodSignUp.Text), txtFirstName.Text.Trim(), txtLastName.Text.Trim());
-            //W.Hide();
             bool success = W.sigupOK;
             W.Dispose();
+            // Доколку успешно е регистриран
             if (success)
             {
                 MessageBox.Show("Succesfull registration !"); 
                 this.DialogResult = DialogResult.OK;
             }
+            // Доколку не е успешено регистриран
             else
             {
-                //W.DialogResult = DialogResult.OK;
-                //MessageBox.Show("Something went wrong, please try again later !"); // Replace with custom one
                 TryAgain N = new TryAgain();
                 N.ShowDialog();
                 this.Show();
@@ -54,7 +53,7 @@ namespace SignUpScreen
                 
             }
         }
-
+        // Визуелно средување на контроли (исто како кај login screen)
         private void txtFirstName_Enter(object sender, EventArgs e)
         {
             if(txtFirstName.Text == "First Name")
@@ -110,6 +109,7 @@ namespace SignUpScreen
             }
             else
             {
+                // Кога се внесува username се проверува дали постои истиот и се дава соодветен визуелен одговор
                 if (Connection_and_Queries.UserExists(txtUsernameSignUp.Text.Trim()))
                 {
                     userValidPicBox.Visible = true;
@@ -154,6 +154,7 @@ namespace SignUpScreen
                 txtConfirmPassword.Enabled = true;
                 passValidPicBox.Visible = true;
                 password = txtPasswrodSignUp.Text;
+                // Валидација на Password
                 if (PasswordCheck.valid(password))
                 {
                     passValidPicBox.Image = Properties.Resources.OK2;
@@ -192,6 +193,7 @@ namespace SignUpScreen
             else
             {
                 repeatPassPicBox.Visible = true;
+                // Валидација на vnesen password
                 if (txtConfirmPassword.Text == password)
                 {
                     repeatPassPicBox.Image = Properties.Resources.OK2;
@@ -206,12 +208,13 @@ namespace SignUpScreen
                 }
             }
         }
-
+        // Враќање кон login
         private void btnGoBack_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.OK;
         }
 
+        // Валидација на внесенување на Password
         private void txtPasswrodSignUp_TextChanged(object sender, EventArgs e)
         {
             txtConfirmPassword.Enabled = true;
@@ -231,6 +234,7 @@ namespace SignUpScreen
             }
         }
 
+        // Валидација на внесенување на Password
         private void txtConfirmPassword_TextChanged(object sender, EventArgs e)
         {
             repeatPassPicBox.Visible = true;
@@ -251,26 +255,13 @@ namespace SignUpScreen
 
         private void checkBox1_CheckStateChanged(object sender, EventArgs e)
         {
-            //if (checkBox1.Checked == true)
-            //{
-            //    if((userValidPicBox.Image == Properties.Resources.OK2) && (passValidPicBox.Image == Properties.Resources.OK2) && (repeatPassPicBox.Image == Properties.Resources.OK2) && 
-            //        (txtFirstName.Text != "") && (txtFirstName.Text != "First Name") &&
-            //        (txtLastName.Text != "") && (txtLastName.Text != "Last Name") &&
-            //        (txtUsernameSignUp.Text != "") && (txtUsernameSignUp.Text != "Username") &&
-            //        (txtPasswrodSignUp.Text != "") && (txtPasswrodSignUp.Text != "Password") && 
-            //        (txtConfirmPassword.Text != "") && (txtConfirmPassword.Text != "Confirm Password"))
-            //    {
-            //        btnSingUpVerify.Enabled = true;
-            //    }
-            //}
-            //else
-            //{
-            //    btnSingUpVerify.Enabled = false;
-            //}
-        }
 
+        }
+        // Доколку корисникот се согласува со terms&conditions
+        // т.е. мора да се согласи
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
+            // Се проверува дали сите параметри се во ред
             if((int.Parse(userValidPicBox.Tag.ToString()) == 0) && (int.Parse(passValidPicBox.Tag.ToString()) == 0) && (int.Parse(repeatPassPicBox.Tag.ToString()) == 0) && 
                 (txtFirstName.Text != "") && (txtFirstName.Text != "First Name") &&
                 (txtLastName.Text != "") && (txtLastName.Text != "Last Name") &&
@@ -287,6 +278,7 @@ namespace SignUpScreen
 
         }
 
+        // Доколку сака да ги прочита terms&conditions
         private void linkLblTerms_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             TermsAndConditions T = new TermsAndConditions();

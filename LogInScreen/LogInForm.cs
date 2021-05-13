@@ -26,7 +26,9 @@ namespace LogInScreen
         {
 
         }
-
+        
+        // На event Enter проверува дали има внесено текст, ако нема т.е. има
+        // default вредност Username, тогаш го брише тој дел за корисникот да може да внесе текст
         private void txtUser_Enter(object sender, EventArgs e)
         {
             if(txtUser.Text == "Username")
@@ -36,6 +38,8 @@ namespace LogInScreen
             }
         }
 
+        // На event Leave проверува дали корсникот има венесо текст
+        // ако нема се враќа default вредноста Username
         private void txtUser_Leave(object sender, EventArgs e)
         {
             if(txtUser.Text == "")
@@ -45,6 +49,8 @@ namespace LogInScreen
             }
         }
 
+        // На event Enter проверува дали има внесено текст, ако нема т.е. има
+        // default вредност Password, тогаш го брише тој дел за корисникот да може да внесе текст
         private void txtPassword_Enter(object sender, EventArgs e)
         {
             if(txtPassword.Text == "Password")
@@ -55,6 +61,8 @@ namespace LogInScreen
             }
         }
 
+        // На event Leave проверува дали корсникот има венесо текст
+        // ако нема се враќа default вредноста Password
         private void txtPassword_Leave(object sender, EventArgs e)
         {
             if(txtPassword.Text == "")
@@ -67,35 +75,40 @@ namespace LogInScreen
 
         private void btnMinimise_Click(object sender, EventArgs e)
         {
+            // Минимизирање на самата форма
             this.WindowState = FormWindowState.Minimized;
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
+            // Затворање на апликацијата
             Application.Exit();
         }
 
+        // Креирање на нов корисник (играч)
         private void btnSignUp_Click(object sender, EventArgs e)
         {
-            SignUpForm signUp = new SignUpForm(); // New instance of the Sign Up form
+            SignUpForm signUp = new SignUpForm(); // Нова инстанца на SignUp формата
             this.Hide();
             signUp.ShowDialog();
             signUp.Dispose();
             this.Show();
         }
 
+        // Селекција да се игра како Guest
         private void linkLblGuest_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            User.guestUser();
-            MainGame.MainGame game = new MainGame.MainGame();
+            User.guestUser(); // Функција која сетира вредности соодветни за Guest играч
+            MainGame.MainGame game = new MainGame.MainGame(); // Старт на играта
             game.Show();
             this.Hide();
         }
 
+        // Log In
         private void btnLogIn_Click(object sender, EventArgs e)
         {
-            bool success = Connection_and_Queries.logIn(txtUser.Text.Trim(), PasswordHashing.hashPassword(txtPassword.Text));
-
+            bool success = Connection_and_Queries.logIn(txtUser.Text.Trim(), PasswordHashing.hashPassword(txtPassword.Text)); // Логирање и праќање на токените за афтентикација на Azure Cloud Server
+            // Ако постои совпаѓање
             if (success)
             {
                 MainGame.MainGame game = new MainGame.MainGame();
@@ -104,16 +117,16 @@ namespace LogInScreen
             }
             else
             {
-                if(!(User.connected))
+                // Доколку корисникот не е поврзан на интернет, а сепак сакал да се поврзе со серверот
+                if(!(User.connected)) 
                 {
-                    //MessageBox.Show("Please connect to internet in order to play or play as guest !");
                     NoInternet N = new NoInternet();
                     N.ShowDialog();
                     N.Dispose();
                 }
+                // Доколку нема совпаѓање
                 else
                 {
-                    //MessageBox.Show("Username or password incorrect !");
                     WrongUserOrPass N = new WrongUserOrPass();
                     N.ShowDialog();
                     N.Dispose();

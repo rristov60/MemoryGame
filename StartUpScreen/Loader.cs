@@ -12,6 +12,7 @@ namespace StartUpScreen
 {
     public partial class Loader : Form
     {
+        // Loading screen имплементиран со едноставен тајмер
         public Loader()
         {
             InitializeComponent();

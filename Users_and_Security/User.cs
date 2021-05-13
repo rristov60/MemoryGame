@@ -2,14 +2,17 @@
 
 namespace Users_and_Security
 {
+    // Класа која ни содржи информации за корисникот
     public class User
     {
-        private static string username;
-        private static string name;
-        private static string lastName;
-        private static int bestScore;
-        public static bool newHighScore;
-        public static bool connected = true;
+        private static string username; // Корисничко име 
+        private static string name; // Име
+        private static string lastName; // Презиме
+        private static int bestScore; // Најдобар резултат
+        public static bool newHighScore; // Нов најдобар резултат
+        public static bool connected = true; // Конектиран кон интернет
+        
+        // Конструктор
         public User(string _username, string _name, string _lastName, int _bestScore) 
         {
             username = _username;
@@ -17,7 +20,7 @@ namespace Users_and_Security
             lastName = _lastName;
             bestScore = _bestScore;
         }
-
+        // Сетирање на guest user
         public static void guestUser()
         {
             username = "guest";
@@ -25,7 +28,7 @@ namespace Users_and_Security
             lastName = "";
             bestScore = 0;
         }
-
+        // Getters & Setters
         public static string getName()
         {
             return name;

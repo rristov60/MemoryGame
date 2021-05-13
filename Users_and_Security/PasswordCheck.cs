@@ -7,6 +7,8 @@ namespace Users_and_Security
 {
     public class PasswordCheck
     {
+        // Функција која проверува дали внесениот password при SignUP е внесен коректно
+        // т.е. да биде подолг од 8 карактери, да содржи специјален знак, една бројка, една голема и една Мала буква
         public static bool valid(string password)
         {
             string specialCh = @"%!@#$%^&*()?/>.<,:;'\|}]{[_~`+=-" + "\"";

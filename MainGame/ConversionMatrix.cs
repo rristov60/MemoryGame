@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace MainGame
 {
+    // Матрица на конверзија користена за замаглување на екранот
+    // поточно 3x3 матрица
     class ConversionMatrix
     {
         public int TopLeft = 0, TopMid = 0, TopRight = 0;
