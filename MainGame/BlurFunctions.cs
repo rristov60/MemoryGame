@@ -11,6 +11,8 @@ namespace MainGame
 {
     class BlurFunctions
     {
+        // Функција која ја користиме за да ја замаглиме позадината
+        // со одреден интензитет
         public static void blur(Panel panel, PictureBox picBox, Bitmap btm)
         {
             btm = Screenshot.takeSnapshot(panel);
@@ -27,6 +29,7 @@ namespace MainGame
 
         }
 
+        // Функција за одмаглување
         public static void removeBlur(PictureBox picBox)
         {
             picBox.Image = null;

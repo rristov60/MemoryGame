@@ -3,11 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Drawing; // We are using this so we can use Bitmap
-using System.Drawing.Imaging; // We are using this so we can use BitmapData
-//using System.Runtime.InteropServices;
-//using System.Windows.Forms;
-//using System.ComponentModel;
+using System.Drawing; // namespace за да може да користиме Bitmap
+using System.Drawing.Imaging; // namespace за да може да користиме BitmapData
 
 namespace MainGame
 {
@@ -15,20 +12,24 @@ namespace MainGame
     {
         private static bool conversionMatrix3x3(Bitmap b, ConversionMatrix m)
         {
-            // Avoid divide by zero errors
+            // Да се избегне делење со нула,
+            // бидејќи матрицата на почетокот има нули
             if (0 == m.Factor) return false;
 
+            // Дуплицирање на изворот којшто ќе се замаглува / на којшто ќе му се примени филтерот
             Bitmap bSrc = (Bitmap)b.Clone();
 
-            // GDI+ still lies to us - the return format is BGR, NOT RGB.
+            // Вратената  слика(Bitmap) е во облик BGR, а не RGB
             BitmapData bmData = b.LockBits(new Rectangle(0, 0, b.Width, b.Height), ImageLockMode.ReadWrite, PixelFormat.Format24bppRgb);
             BitmapData bmSrc = bSrc.LockBits(new Rectangle(0, 0, bSrc.Width, bSrc.Height), ImageLockMode.ReadWrite, PixelFormat.Format24bppRgb);
-
+            
             int stride = bmData.Stride;
             int stride2 = stride * 2;
             System.IntPtr Scan0 = bmData.Scan0;
             System.IntPtr SrcScan0 = bmSrc.Scan0;
 
+            // Распределување на тежината на централниот пиксел од матрицата на околните пиксели
+            // споменато во ConversionMatrix
             unsafe
             {
                 byte* p = (byte*)(void*)Scan0;
@@ -40,6 +41,8 @@ namespace MainGame
 
                 int nPixel;
 
+                // Изминување на матрицата т.е. пикселите на Bitmap-от или таргет сликата
+                // по височина и широчина
                 for (int y = 0; y < nHeight; ++y)
                 {
                     for (int x = 0; x < nWidth; ++x)
@@ -86,7 +89,8 @@ namespace MainGame
             return true;
         }
 
-        public static bool gaussianBlur(Bitmap b, int nWeight /* default to 4*/)
+        // Додавање тежина на распределените пиксели за да добиеме резултат на замаглена позадина
+        public static bool gaussianBlur(Bitmap b, int nWeight)
         {
             ConversionMatrix m = new ConversionMatrix();
             m.SetAll(1);

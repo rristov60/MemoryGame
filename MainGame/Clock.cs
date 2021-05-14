@@ -17,7 +17,7 @@ namespace MainGame
             // Ротирање на функцијата за одреден агол и користење на матрици на транслација
             using (Graphics g = Graphics.FromImage(rotatedImage))
             {
-                g.TranslateTransform(rotateMe.Width / 2, rotateMe.Height / 2);
+                g.TranslateTransform(rotateMe.Width / 2, rotateMe.Height / 2); // Користење на формула која ни помага да ја ротираме сликата за одреден агол
                 g.RotateTransform(angle);
                 g.TranslateTransform(-rotateMe.Width / 2, -rotateMe.Height / 2);
                 g.DrawImage(rotateMe, new Point(0, 0));
